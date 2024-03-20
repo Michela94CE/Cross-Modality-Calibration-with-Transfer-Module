@@ -8,6 +8,14 @@ The use of deep neural networks (DNNs) in medical images has enabled the develop
 # Impact Statement
 In the context of breast cancer, the metastatic involvement of axillary lymph nodes (ALN) stands out as a crucial prognostic factor, reflecting the intrinsic behavior of the primary tumor. Multiparametric Magnetic Resonance Imaging (MRI) enables a comprehensive examination, providing both physiological and morphological characteristics through sequences involving pre-contrast and post-contrast agent administration. This highlights the necessity of integrating diverse information, particularly when considering histological data in conjunction with images. However, current state-of-art solutions typically exploit features extracted from the post-contrast series, neglecting the use of the others. The methodology presented in this paper harnesses Multimodal Deep Learning (MDL) to overcome this limitation, efficiently integrating clinical information and features from multiple image modalities. Demonstrating an accuracy of 90% in the metastatic evaluation of ALN, our algorithm has the potential to support radiologists in their daily analysis of breast MRI.
 
+# Transfer Module
+
+- We propose an innovative Transfer Module (TM) that can be inserted between layers belonging to different modality-specific paths to model the complex interaction of heterogeneous data.
+- We make our TM able to modify the extracted features maps in each modality-specific path taking into account the complementary nature of the inputs. We will refer to this procedure as cross-modality calibration.
+- We implement in the TM a specific operation, denoted as gating mechanism, that reduces the importance of the least discriminative characteristics in each modality-specific features maps exploiting the descriptors of all the inputs.  
+- We include the TM in the training process, making the definition of the most relevant features well-suited for the specific task to solve.
+
+  
 
 # Authors
 Michela Gravina, Domiziana Santucci, Ermanno Cordelli, Paolo Soda, and Carlo Sansone
