@@ -15,6 +15,7 @@ In the context of breast cancer, the metastatic involvement of axillary lymph no
 - We implement in the TM a specific operation, denoted as gating mechanism, that reduces the importance of the least discriminative characteristics in each modality-specific features maps exploiting the descriptors of all the inputs.  
 - We include the TM in the training process, making the definition of the most relevant features well-suited for the specific task to solve.
 
+![Alt text](https://github.com/Michela94CE/Cross-Modality-Calibration-with-Transfer-Module/tree/main/img/tm.png)
   
 
 # Authors
